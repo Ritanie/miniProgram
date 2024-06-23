@@ -1,5 +1,3 @@
 pandas
 streamlit
-re
 openpyxl
-load_workbook
