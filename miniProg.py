@@ -280,7 +280,7 @@ def display_calculator():
             "Select your shape option",
             options=["H02", "H03"],
         )
-    quantity = st.slider("Select your input quantity:", 0, 100, 1)
+    quantity = st.slider("Select your input quantity:", 1, 100, 1)
 
 
 
