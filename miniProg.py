@@ -303,7 +303,7 @@ def display_calculator():
                     indl = []
                     for i,j in enumerate(df2['Weight(lb)']):
                         ps = j-float(original_weight)
-                        if ps > 0:
+                        if ps >= 0:
                             p.append(ps)
                             indl.append(j)
                     for a,b in enumerate(p):
