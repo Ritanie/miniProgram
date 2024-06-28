@@ -64,7 +64,7 @@ def display_converter():
         shape_dict = {
             'H02': '方形',
             'H03': '三角形',
-            'H04': '竖版'
+            'H04': ' 侧面'
         }
         color_dict = {
             'BG': '米色',
@@ -88,7 +88,10 @@ def display_converter():
                     break
             
             # Combine the shape and color
-            description = f"{shape}{color}"
+            if shape == ' 侧面':
+                description = f"{color}{shape}"
+            else:
+                description = f"{shape}{color}"
             return description
         Description = [word_preprocess(sku) for sku in SKU_No]
         #print(Description)
